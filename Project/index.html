@@ -2,19 +2,20 @@
 <head>
     <meta charset="utf-8">
     <link href="../common.css" rel="stylesheet">
-    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./project.css" rel="stylesheet">
+    <link href="../Font/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
         <div class="left_group">
         </div>
         <div class="center_group">
-            <a href="">
+            <a href="../">
                 <div class="center_item">
                     <span>HOME</span>
                 </div>
             </a>
-            <a href="/Project">
+            <a href="">
                 <div class="center_item">
                     <span>PROJECT</span>
                 </div>
@@ -31,20 +32,59 @@
             </a>
         </div>
         <div class="right_group">
-            <div class="right_item">
-                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            </div>
-            <div class="right_item">
-                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </div>
-            <div class="right_item">
-                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-            </div>
         </div>
     </div>
-    <div>
-        <p>
-            This page is about my prejects, works, and professional information.
-        </p>
+    <div class="layout-grid-container">
+        <div class="main-content">
+            <div class="header">
+                <h3 class="header-paregraph">
+                    Hi, I'm Ken. 
+                </h3>
+            </div>
+            <div class="middle">
+                <div class="green-layer">
+                    <div class="about-me"></div>
+                    <div class="about-me">
+                        <span style="font-family:DealerStrikesStraight-nRL1R;font-size:50px;">
+                            <div class="image-container">
+                                <a href="https://style.me/solution/">
+                                    <img src="style-me-logo-original.png">
+                                </a>
+                            </div>
+                        </span>
+                        <p class="decription-paragraph">
+                            Styleme was a cool website. Think, if you can try a clothes online without any effort,
+                            why not just stay at home and be yourselves. Styleme covers different clothing categories, scanned clothes
+                            and create 3D avatars for visualizations. You can choose your own avatar and match body size you are,
+                            and Bang, everything done. The clients include Bloomingdales and Heart of Sun. 
+                        </p>
+                        <p class="decription-paragraph">
+                            I was a software engineer in Styleme, being resiposible for back-end server using Java
+                            and some framworks. Because the high quality of images transporting between front-end
+                            and back-end, I used zero copy strategy to reduce file-loading time by 65%. It reduce 
+                            CPU coping time and the number of context switches between user space and kernal space 
+                            in file system. In addtion, by implementing HTTP caching machenism which sent less requests 
+                            to our server, I increased image loading speed 50%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="contact-group">
+                    <div class="right_item">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="right_item">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="right_item">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <span>© 2021 Ken Lu</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>

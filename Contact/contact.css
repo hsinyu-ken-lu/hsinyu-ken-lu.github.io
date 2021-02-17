@@ -1,0 +1,31 @@
+.about-me {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.email {
+    font-family: Avenir-LT-35-Light;
+    line-height: 1.9em;
+    margin-top:25px;
+    color: white;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .about-me {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    .email {
+        font-family: Avenir-LT-35-Light;
+        line-height: 1.9em;
+        margin-top: 0px;
+        color: white;
+        font-size: 25px;
+    }
+}

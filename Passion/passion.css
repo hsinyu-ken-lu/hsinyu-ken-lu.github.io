@@ -1,14 +1,15 @@
-.layout-flex-container {
+.middle {
     display: flex;
     justify-content: center;
+    width:100%;
+    height: auto;
 }
 
-.main-content{
+.middle-layer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 850px;
+    justify-content: center;
     width:1000px;
+    height:auto
 }
 
 .photo-gallery {    
@@ -16,13 +17,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: #3a6053; */
-    padding-top: 20px;
 }
 
 .photo-box {
     width: 225px;
     height: 225px;
+    margin: 10px;
+    transition: 200ms;
+}
+
+.photo-box:hover {
+    width: 250px;
+    height: 250px;
     margin: 5px;
 }
 
@@ -31,4 +37,47 @@
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .middle {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        height: auto;
+    }
+    
+    .middle-layer {
+        display: flex;
+        justify-content: center;
+        width:500px;
+        height:auto
+    }
+    
+    .photo-gallery {    
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .photo-box {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        transition: 200ms;
+    }
+    
+    .photo-box:hover {
+        width: 215px;
+        height: 215px;
+        margin: 5px;
+    }
+    
+    .photo-box img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
 }
